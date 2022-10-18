@@ -8,14 +8,14 @@ import java.util.List;
 
 @Entity
 @Table(name = "cloud")
-//@JsonPropertyOrder({"id", "name", "brand", "cloud", "description", "category", "messages", "reservations"})
+//@JsonPropertyOrder({"id", "name", "brand", "year", "description", "category", "messages", "reservations"})
 public class Cloud implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String brand;
-    private Integer cloud;
+    private Integer year;
     private String description;
 
     @ManyToOne
@@ -56,12 +56,12 @@ public class Cloud implements Serializable {
         this.brand = brand;
     }
 
-    public Integer getCloud() {
-        return cloud;
+    public Integer getYear() {
+        return year;
     }
 
-    public void setCloud(Integer cloud) {
-        this.cloud = cloud;
+    public void setYear(Integer year) {
+        this.year = year;
     }
 
     public String getDescription() {

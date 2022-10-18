@@ -47,8 +47,8 @@ public class CloudService {
                 if (cloud.getBrand() != null) {
                     cloudEncontrado.get().setBrand(cloud.getBrand());
                 }
-                if (cloud.getCloud() != null) {
-                    cloudEncontrado.get().setCloud(cloud.getCloud());
+                if (cloud.getYear() != null) {
+                    cloudEncontrado.get().setYear(cloud.getYear());
                 }
                 if (cloud.getDescription() != null) {
                     cloudEncontrado.get().setDescription(cloud.getDescription());
